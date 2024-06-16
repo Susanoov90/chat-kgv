@@ -1,0 +1,15 @@
+body{
+  background-color: rgb(57, 57, 57);
+  height: 100%;
+}
+
+.Main {
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(57, 57, 57);
+    // margin-top: 0.5%;
+
+    &::-webkit-scrollbar-button{
+      display: none;
+    }
+  }

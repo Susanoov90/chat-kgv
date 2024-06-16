@@ -1,0 +1,115 @@
+.all {
+    overflow-y: auto;
+
+    .contain {
+        height: 100%;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(182, 165, 134);
+        }
+
+        &__Messages {
+            display: flex;
+            justify-content: space-around;
+
+            padding: 0.4rem;
+
+            &__BubbleImgProfile {
+                width: 4rem;
+                height: 4rem;
+                position: relative;
+
+                &--imgProfile {
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 5rem;
+                    border: 1px solid transparent;
+                    overflow: hidden;
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                &--ActiveConnection {
+                    content: "";
+                    position: absolute;
+                    background-color: chartreuse;
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    left: 80%;
+                    top: 80%
+                }
+
+                &--NotConnection {
+                    content: "";
+                    position: absolute;
+                    background-color: rgb(255, 72, 0);
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    left: 80%;
+                    top: 80%
+                }
+            }
+
+            &__NameAndMessage {
+                margin-top: auto;
+                margin-bottom: auto;
+                width: 70%;
+                text-align: left;
+                margin-left: 0.4rem;
+
+                &--Name {
+                    font-weight: 700;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+    
+                }
+
+                &--Message {
+                    font-size: small;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;    
+                }
+            }
+
+            &__BubbleNotification {
+                display: flex;
+                align-items: center;
+
+                &--Notification {
+                    border: 1px solid transparent;
+                    border-radius: 2rem;
+                    padding: 0.2rem;
+                    // height: 100%;
+                    width: 100%;
+                    font-size: 0.7rem;
+                    font-weight: 700;
+                    background-color: white;
+                    color: rgb(200, 130, 0);
+                }
+            }
+        }
+    }
+
+    &__hr {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        hr {
+            width: 70%;
+            color: rgb(0, 0, 0);
+        }
+    }
+}

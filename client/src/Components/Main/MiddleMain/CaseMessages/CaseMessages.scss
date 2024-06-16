@@ -1,0 +1,79 @@
+.CaseMessages {
+    background-color: rgb(57, 57, 57);
+    // width: 50%;
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+
+    &__TextZone {
+        width: 60%;
+
+        textarea {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            background-color: rgb(57, 57, 57);
+            color: white;
+            padding: 1.2rem;
+            resize: none;
+            box-shadow: inset 0px 1px 5px 6px rgb(57, 57, 57);
+            // box-shadow: inset 0px 1px 11px 1px rgb(126, 36, 36);
+
+            &::placeholder {
+                color: rgb(150, 150, 150);
+            }
+        }
+
+    }
+
+    &__ButtonsZone {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &__EmojiZone {
+            display: flex;
+            align-items: center;
+
+            transition: transform .3s;
+
+            &:hover {
+                transform: scale(1.5);
+                cursor: pointer;
+            }
+        }
+
+        &__FileZone {
+            display: flex;
+            align-items: center;
+
+            transition: transform .3s;
+
+            &:hover {
+                transform: scale(1.5);
+                cursor: pointer;
+            }
+
+        }
+
+        &__SendBubble {
+            display: flex;
+            align-items: center;
+
+            div {
+                border: 1px solid transparent;
+                background-color: rgb(196, 127, 0);
+                border-radius: 5rem;
+                padding: 0.7rem;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(255, 166, 0)
+                }
+            }
+        }
+    }
+}

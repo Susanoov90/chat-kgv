@@ -1,0 +1,11 @@
+.MiddleMain{
+    width: 100%;
+    height: 90.7vh;
+    overflow-y: hidden;
+    position: relative;
+    // margin-top: 2%;
+    &__WhenNotChat{
+        padding-top: 2rem;
+        color: aliceblue;
+    }
+}

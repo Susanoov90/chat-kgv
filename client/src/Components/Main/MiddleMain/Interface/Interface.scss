@@ -1,0 +1,107 @@
+.Interface{
+    background-color: rgb(230, 230, 230);
+    height: 80%;
+    overflow-y: scroll;
+    box-shadow: inset 2px 2px 15px 0px rgb(113, 113, 113);
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    
+    &__MessageReceived{
+        display: flex;
+
+        &--imgProfileCase {
+            display: flex;
+            align-items: end;
+
+            &--imgProfile {
+                width: 4rem;
+                height: 4rem;
+                border-radius: 5rem;
+                border: 1px solid transparent;
+                overflow: hidden;
+                vertical-align: baseline;
+    
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &--BlockMessage{
+            background-color: rgb(172, 172, 172);
+            width: fit-content;
+            width: 50%;
+            margin-top: -3rem;
+            height: 100%;
+            
+            &--message{
+                font-size: small;
+                width: fit-content;
+                text-align: start;
+                padding: 0.5rem;
+            }
+
+            &--timeReceived{
+                font-size: small;
+                text-align: end;
+                padding: 0.5rem;
+                font-style: italic;
+            }
+        }
+    }
+
+    &__MessageSent{
+        display: flex;
+        justify-content: end;
+
+        &--BlockMessage{
+            background-color: rgb(123, 80, 0);
+            width: fit-content;
+            width: 50%;
+            margin-top: -3rem;
+            height: 100%;
+            
+            &--message{
+                font-size: small;
+                width: fit-content;
+                text-align: start;
+                padding: 0.5rem;
+                color: white;
+            }
+
+            &--timeSent{
+                font-size: small;
+                text-align: start;
+                padding: 0.5rem;
+                font-style: italic;
+                color: aliceblue;
+            }
+        }
+
+        &--imgProfileCase {
+            display: flex;
+            align-items: end;
+
+            &--imgProfile {
+                width: 4rem;
+                height: 4rem;
+                border-radius: 5rem;
+                border: 1px solid transparent;
+                overflow: hidden;
+                vertical-align: baseline;
+    
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
